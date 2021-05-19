@@ -16,7 +16,9 @@ class Travels extends Migration
         Schema::create('travels', function (Blueprint $table){
             $table->id('id');
             $table->string('destination');
-            $table->float('price', 5, 2);
+            $table->string('city');
+
+            $table->float('price', 8, 2);
             $table->string('vacation_description');
             $table->timestamps();
         });
